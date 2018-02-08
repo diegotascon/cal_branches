@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head>
+<title>Calculator</title><meta charset="utf-8">
+<script type="text/javascript">
+
+function square() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
+
+// Añado función para el cubo
+function cube() {
+  var num = document.getElementById("n1");
+  num.value = Math.pow(num.value, 3);
+}
+</script>
+</head>
+<body>
+  Number:
+  <input type="text" id="n1"><p>
+
+  <!-- Cambio x^2 por x^3 -->
+  <button onclick="cube()"> x<sup>3</sup> </button>
+</body>
+</html>
